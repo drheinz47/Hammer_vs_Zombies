@@ -7,15 +7,22 @@ public class InputHandler : MonoBehaviour
 
     private void Awake()
     {
-        int i;
         _mainCamera = Camera.main;
     }
 
     public void OnClick(InputAction.CallbackContext context)
     {
         if(!context.started) {return;}
-
-        var rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+        RaycastHit2D rayHit = Physics2D.GetRayIntersection(_mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue()));
         if (!rayHit.collider) {return;}
+        if (rayHit.collider.TryGetComponent<ZombieLife>(out ZombieLife zombieLife))
+        {
+            zombieLife.DeathByHammer();
+        }
+    }
+
+    public void KillClickedZombie(RaycastHit2D rayHit)
+    {
+        
     }
 }
