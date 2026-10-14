@@ -50,6 +50,7 @@ public class ZombieLife : MonoBehaviour
         else
         {
             lives--;
+            Debug.Log("Zombie lives remaining: " + lives);
             SelectSprite();
         }
     }
