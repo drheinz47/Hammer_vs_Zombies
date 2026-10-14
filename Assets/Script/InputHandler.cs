@@ -20,9 +20,4 @@ public class InputHandler : MonoBehaviour
             zombieLife.DeathByHammer();
         }
     }
-
-    public void KillClickedZombie(RaycastHit2D rayHit)
-    {
-        
-    }
 }

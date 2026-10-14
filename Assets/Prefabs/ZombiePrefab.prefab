@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4174866431905101710, guid: 3eb49f500f8e4e84bb5480778be19807, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 575061380f89fcd409817e96a450a11e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
 --- !u!61 &6330961103548160933
@@ -153,6 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f156ed1042a964bb0f740455bbc56b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieLife
+  speed: 5
+  textures:
+  - {fileID: 21300000, guid: 575061380f89fcd409817e96a450a11e, type: 3}
+  - {fileID: 21300000, guid: f26a6ff4e1fc0ae4e84bb770969750b9, type: 3}
+  - {fileID: 21300000, guid: 9f0c5a287db7a4745b53b04594ba8f64, type: 3}
 --- !u!1 &8548771254817061867
 GameObject:
   m_ObjectHideFlags: 0
