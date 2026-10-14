@@ -13,12 +13,12 @@ public class DifficultyController : MonoBehaviour
     public void SetDifficulty()
     {
         difficulty.speed = Mathf.Min(2 * (1 + difficulty.level/4f), 8);
-        if(difficulty.level > 20){difficulty.lives = 3;}
-        else if(difficulty.level > 7){difficulty.lives = 2;}
+        if(difficulty.level > 12){difficulty.lives = 3;}
+        else if(difficulty.level > 3){difficulty.lives = 2;}
         else{difficulty.lives = 1;}
-        if(difficulty.level > 25)
+        if(difficulty.level > 18)
         {
-            difficulty.frequency = Mathf.Max(100 - (difficulty.level - 25), 20);
+            difficulty.frequency = Mathf.Max(100 - (difficulty.level - 18), 20);
         }
         else
         {
